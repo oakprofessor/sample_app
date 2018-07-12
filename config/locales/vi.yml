@@ -1,0 +1,17 @@
+vi:
+  layouts:
+    application:
+      head_title: "Ứng dụng hướng dẫn lập trình Ruby on Rails"
+  static_pages:
+    home:
+      home_title: "Ứng dụng mẫu"
+      home_detail_html: "Đây là trang của ứng dụng mẫu <a href='http://www.railstutorial.org/'>Hướng dẫn lập trình Ruby on Rails</a>"
+    help:
+      help_title: "Trợ gíup"
+      help_detail_html: "Xem trợ gíup hướng dẫn lập trình Ruby on Rails tại <a href='http://www.railstutorial.org/help'>Phần hỗ trợ hướng dẫn lập trình Rails</a>. Xem trợ giúp trên ứng dụng mẫu trên <a href='http://www.railstutorial.org/book'><em>Hướng dẫn lập trình Ruby on Rails</em> book</a>."
+    about:
+      about_title: "Về chúng tôi"
+      about_detail_html: "Trang <a href='http://www.railstutorial.org/'><em>Hướng dẫn lập trình Ruby on Rails</em></a> là một <a href='http://www.railstutorial.org/book'>cuốn sách</a> và <a href='http://screencasts.railstutorial.org/'>một series hướng dẫn về screencast</a> để đào tạo lập trình web với <a href='http://rubyonrails.org/'>Ruby on Rails</a>. Đây là các ví dụ cho hướng dẫn này."
+    contact:
+      contact_title: "Liên hệ"
+      contact_detail_html: "Liên hệ hướng dẫn lập trình Ruby on Rails với ứng dụng mẫu tại <a href='http://www.railstutorial.org/contact'>trang liên lạc</a>."
