@@ -2,10 +2,21 @@ en:
   layouts:
     application:
       head_title: "Ruby on Rails Tutorial Sample App"
+    header:
+      heado_title: "Sample App"
+      heada_title: "Home"
+      headb_title: "Help"
+      headc_title: "Log in"
+    footer:
+      foota_title: "About"
+      footb_title: "Contact"
+      foot_detail_html: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a> by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+      footc_detail_html: "<a href='http://news.railstutorial.org/'>News</a>"
   static_pages:
     home:
       home_title: "Sample App"
       home_detail_html: "This is the home page for the <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a> sample application."
+      home_middle: "Sign up now!"
     help:
       help_title: "Help"
       help_detail_html: "Get help on the Ruby on Rails Tutorial at the <a href='http://www.railstutorial.org/help'>Rails Tutorial help section</a>. To get help on this sample app, see the <a href='http://www.railstutorial.org/book'><em>Ruby on Rails Tutorial</em>book</a>."
@@ -15,3 +26,7 @@ en:
     contact:
       contact_title: "Contact"
       contact_detail_html: "Contact the Ruby on Rails Tutorial about the sample app at the <a href='http://www.railstutorial.org/contact'>contact page</a>."
+  users:
+    new:
+      new_title: "Sign up"
+      new_detail: "This will be a signup page for new users."
