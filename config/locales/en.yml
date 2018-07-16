@@ -26,7 +26,15 @@ en:
     contact:
       contact_title: "Contact"
       contact_detail_html: "Contact the Ruby on Rails Tutorial about the sample app at the <a href='http://www.railstutorial.org/contact'>contact page</a>."
+  shared:
+    error_messages:
+      shared_contenta: "The form contains"
+      shared_contentb: "error"
   users:
     new:
       new_title: "Sign up"
-      new_detail: "This will be a signup page for new users."
+      new_submit: "Create my account"
+  controllers:
+    users_controller:
+      success: "Welcome to the Sample App!"
+      danger: "User not found"
