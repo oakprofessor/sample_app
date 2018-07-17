@@ -26,7 +26,38 @@ vi:
     contact:
       contact_title: "Liên hệ"
       contact_detail_html: "Liên hệ hướng dẫn lập trình Ruby on Rails với ứng dụng mẫu tại <a href='http://www.railstutorial.org/contact'>trang liên lạc</a>."
+  shared:
+    error_messages:
+      shared_contenta: "Biểu mẫu chứa"
+      shared_contentb: "lỗi"
   users:
     new:
       new_title: "Đăng ký"
-      new_detail: "Đây là trang đăng ký người dùng mới."
+      new_submit: "Tạo tài khoản"
+  controllers:
+    users_controller:
+      success: "Chào mừng đến với ứng dụng mẫu!"
+      danger: "Không tìm thấy người dùng"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "không thể để trống"
+            email:
+              blank: "không thể để trống"
+              invalid: "không hợp lệ"
+            password:
+              blank: "không thể để trống"
+              too_short: "quá ngắn"
+            password_confirmation:
+              confirmation: "không khớp mật khẩu đã chọn"
+    attributes:
+          user:
+            name: "Tên"
+            email: "Địa chỉ mail"
+            password: "Mật khẩu"
+            password_confirmation: "Xác nhận mật khẩu"
+
+
