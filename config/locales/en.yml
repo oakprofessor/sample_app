@@ -4,9 +4,14 @@ en:
       head_title: "Ruby on Rails Tutorial Sample App"
     header:
       heado_title: "Sample App"
-      heada_title: "Home"
-      headb_title: "Help"
-      headc_title: "Log in"
+      head_home: "Home"
+      head_help: "Help"
+      head_login: "Log in"
+      head_profile: "Profile"
+      head_settings: "Settings"
+      head_logout: "Log out"
+      head_log: "Log in"
+      head_account: "Account"
     footer:
       foota_title: "About"
       footb_title: "Contact"
@@ -38,3 +43,13 @@ en:
     users_controller:
       success: "Welcome to the Sample App!"
       danger: "User not found"
+  sessions:
+    new:
+      login_title: "Log in"
+      login_email: "Email"
+      login_pass: "Password"
+      login_submit: "Log in"
+      login_none: "New user?"
+      login_sign: "Sign up now!"
+    create:
+      invalid: "Invalid email/password combination"

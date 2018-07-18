@@ -4,9 +4,14 @@ vi:
       head_title: "Ứng dụng hướng dẫn lập trình Ruby on Rails"
     header:
       heado_title: "Ứng dụng mẫu"
-      heada_title: "Trang chủ"
-      headb_title: "Trợ gíup"
-      headc_title: "Đăng nhập"
+      head_home: "Trang chủ"
+      head_help: "Trợ gíup"
+      head_login: "Đăng nhập"
+      head_profile: "Hồ sơ"
+      head_settings: "Cài đặt"
+      head_logout: "Đăng xuất"
+      head_log: "Đăng nhập"
+      head_account: "Tài khoản"
     footer:
       foota_title: "Chúng tôi"
       footb_title: "Liên lạc"
@@ -54,10 +59,18 @@ vi:
             password_confirmation:
               confirmation: "không khớp mật khẩu đã chọn"
     attributes:
-          user:
-            name: "Tên"
-            email: "Địa chỉ mail"
-            password: "Mật khẩu"
-            password_confirmation: "Xác nhận mật khẩu"
-
-
+      user:
+        name: "Tên"
+        email: "Địa chỉ mail"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+  sessions:
+    new:
+      login_title: "Đăng nhập"
+      login_email: "Địa chỉ mail"
+      login_pass: "Mật khẩu"
+      login_submit: "Đăng nhập"
+      login_none: "Chưa có tài khoản?"
+      login_sign: "Đăng ký ngay!"
+    create:
+      invalid: "Tài khoản hoặc mật khẩu không hợp lệ"
