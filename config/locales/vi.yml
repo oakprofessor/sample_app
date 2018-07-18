@@ -72,5 +72,6 @@ vi:
       login_submit: "Đăng nhập"
       login_none: "Chưa có tài khoản?"
       login_sign: "Đăng ký ngay!"
+      login_remember: "Lưu tài khoản trên máy tính này"
     create:
       invalid: "Tài khoản hoặc mật khẩu không hợp lệ"
