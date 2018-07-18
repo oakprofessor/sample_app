@@ -51,5 +51,6 @@ en:
       login_submit: "Log in"
       login_none: "New user?"
       login_sign: "Sign up now!"
+      login_remember: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
