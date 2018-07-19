@@ -10,8 +10,8 @@ en:
       head_profile: "Profile"
       head_settings: "Settings"
       head_logout: "Log out"
-      head_log: "Log in"
       head_account: "Account"
+      head_user: "Users"
     footer:
       foota_title: "About"
       footb_title: "Contact"
@@ -39,10 +39,23 @@ en:
     new:
       new_title: "Sign up"
       new_submit: "Create my account"
+    edit:
+      edit_title: "Edit user"
+      edit_save: "Save changes"
+      edit_update: "Update your profile"
+      edit_change: "Change"
+    index:
+      index_title: "All users"
+    user:
+      delete: "/ delete"
+      sure: "You sure?"
   controllers:
     users_controller:
       success: "Welcome to the Sample App!"
-      danger: "User not found"
+      profile: "Profile updated"
+      login: "Please log in."
+      delete: "User deleted"
+      exist: "Not exist user"
   sessions:
     new:
       login_title: "Log in"
@@ -54,3 +67,6 @@ en:
       login_remember: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
+  will_paginate:
+    previous_label: "Previous"
+    next_label: "Next"

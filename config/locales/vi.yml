@@ -10,8 +10,8 @@ vi:
       head_profile: "Hồ sơ"
       head_settings: "Cài đặt"
       head_logout: "Đăng xuất"
-      head_log: "Đăng nhập"
       head_account: "Tài khoản"
+      head_user: "Người dùng"
     footer:
       foota_title: "Chúng tôi"
       footb_title: "Liên lạc"
@@ -39,10 +39,23 @@ vi:
     new:
       new_title: "Đăng ký"
       new_submit: "Tạo tài khoản"
+    edit:
+      edit_title: "Chỉnh sửa người dùng"
+      edit_save: "Lưu thay đổi"
+      edit_update: "Cập nhật tài khoản"
+      edit_change: "Thay đổi"
+    index:
+      index_title: "Tất cả người dùng"
+    user:
+      delete: "/ xóa"
+      sure: "Bạn chắc chứ?"
   controllers:
     users_controller:
       success: "Chào mừng đến với ứng dụng mẫu!"
-      danger: "Không tìm thấy người dùng"
+      profile: "Tài khoản đã được cập nhật"
+      login: "Hãy đăng nhâp."
+      delete: "Đã xóa người dùng"
+      exist: "Không tồn tại người dùng"
   activerecord:
     errors:
       models:
@@ -75,3 +88,6 @@ vi:
       login_remember: "Lưu tài khoản trên máy tính này"
     create:
       invalid: "Tài khoản hoặc mật khẩu không hợp lệ"
+  will_paginate:
+    previous_label: "Trước"
+    next_label: "Sau"

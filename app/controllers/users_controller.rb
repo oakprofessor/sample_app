@@ -1,9 +1,12 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
-    return if @user
-    flash[:danger] = t("controllers.users_controller.danger")
-    redirect_to root_path
+  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :get_user, only: [:edit, :show, :update, :destroy]
+  before_action :correct_user, only: [:edit, :update]
+  before_action :admin_user, only: :destroy
+
+  def index
+    @users = User.select(:id, :name, :email).order(created_at: :asc)
+                 .paginate(page: params[:page]).per_page Settings.page_limit
   end
 
   def new
@@ -17,8 +20,27 @@ class UsersController < ApplicationController
       flash[:success] = t("controllers.users_controller.success")
       redirect_to @user
     else
-      render "new"
+      render :new
     end
+  end
+
+  def edit; end
+
+  def show; end
+
+  def update
+    if @user.update_attributes(user_params)
+      flash[:success] = t("controllers.users_controller.profile")
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @user.destroy
+    flash[:success] = t("controllers.users_controller.delete")
+    redirect_to users_url
   end
 
   private
@@ -26,5 +48,36 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
+  end
+
+  def logged_in_user
+    return if logged_in?
+    store_location
+    flash[:danger] = t("controllers.users_controller.login")
+    redirect_to login_url
+  end
+
+  def correct_user
+    redirect_to(root_url) unless current_user?(@user)
+  end
+
+  def redirect_back_or default
+    redirect_to(session[:forwarding_url] || default)
+    session.delete(:forwarding_url)
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
+  end
+
+  def admin_user
+    redirect_to(root_url) unless current_user.admin?
+  end
+
+  def get_user
+    @user = User.find_by id: params[:id]
+    return if @user
+    flash[:danger] = t("controllers.users_controller.exist")
+    redirect_to root_path
   end
 end
